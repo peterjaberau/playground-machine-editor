@@ -1,0 +1,1283 @@
+[
+  {
+    "projects": [
+      {
+        "projectId": "6f5cb8fb-f926-4bec-ac1d-26a7f20bf0c1",
+        "projectVersionId": "0cacaa66-3168-4136-b3d8-6e2c5e4ff756",
+        "name": "discover",
+        "ownership": "personal",
+        "description": null,
+        "visibility": "public",
+        "createdAt": "2026-05-03T17:28:30.670Z",
+        "updatedAt": "2026-09-22T17:41:20.233Z",
+        "rootMachineId": "98ab7cd9-def8-4d5e-a3d8-8084fe014ed7",
+        "machines": [
+          {
+            "machineId": "98ab7cd9-def8-4d5e-a3d8-8084fe014ed7",
+            "name": "engine",
+            "createdAt": "2026-05-03T17:28:30.766Z",
+            "updatedAt": "2026-09-22T16:49:39.470Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "264c6425-2859-4506-9a52-546c52208c67",
+            "name": "editorEvaluation",
+            "createdAt": "2026-05-03T17:28:51.754Z",
+            "updatedAt": "2026-09-22T16:49:02.956Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "7fe25b97-f32d-4232-8c69-630e72af9f57",
+            "name": "Advance payment flow",
+            "createdAt": "2026-05-03T17:31:35.849Z",
+            "updatedAt": "2026-09-22T16:45:31.850Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f0efacc0-df6b-4ccf-84b6-2230329df682",
+            "name": "agents-workflow",
+            "createdAt": "2026-05-03T17:32:01.582Z",
+            "updatedAt": "2026-09-22T16:48:44.379Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "58e8d73c-8ba6-48dd-bb19-92f382527dc8",
+            "name": "ruleBuilder",
+            "createdAt": "2026-05-03T17:32:15.648Z",
+            "updatedAt": "2026-09-22T16:50:02.119Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "d9bc1d7f-45ea-4314-91ac-4cd14ca3afdf",
+            "name": "queryBuilder",
+            "createdAt": "2026-05-03T17:32:56.693Z",
+            "updatedAt": "2026-09-22T17:41:20.233Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "9a682aa2-e4ea-4aab-97c8-6263dbdce0b6",
+            "name": "aiAgentBuilder",
+            "createdAt": "2026-05-03T17:33:48.089Z",
+            "updatedAt": "2026-09-22T16:45:43.033Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "cf96e66e-4ca0-48a1-b717-d8efa742ea61",
+            "name": "ParallelWorkflowBuilder",
+            "createdAt": "2026-05-03T17:34:04.885Z",
+            "updatedAt": "2026-09-22T16:49:47.271Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "d808e4b9-a934-4bc1-8f0d-ae4af4003557",
+            "name": "dataProvider",
+            "createdAt": "2026-05-03T17:35:20.654Z",
+            "updatedAt": "2026-09-22T16:48:56.207Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "cef3e194-9c7a-4ce3-a5e8-4e8fe65bcbbc",
+            "name": "workflowBuilder",
+            "createdAt": "2026-05-03T17:36:15.979Z",
+            "updatedAt": "2026-09-22T17:12:01.234Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "5fb71a7a-cd89-432a-b36c-50a4820fd115",
+            "name": "EditorRootMachine",
+            "createdAt": "2026-05-03T17:38:30.249Z",
+            "updatedAt": "2026-09-22T16:49:31.282Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "beee1b67-1502-4cbc-9523-4f00cc5ac214",
+        "projectVersionId": "c2525ca4-599d-4fdf-a875-076e3d806f6e",
+        "name": "design-studio",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-09-25T08:11:43.605Z",
+        "updatedAt": "2026-09-25T12:59:17.367Z",
+        "rootMachineId": "23ec59c5-0933-4b74-9fa8-1c04a44183d9",
+        "machines": [
+          {
+            "machineId": "23ec59c5-0933-4b74-9fa8-1c04a44183d9",
+            "name": "app",
+            "createdAt": "2026-09-25T08:11:50.421Z",
+            "updatedAt": "2026-09-25T12:59:17.367Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "75cfcede-6e85-475d-98aa-174aa0376070",
+            "name": "artifacts",
+            "createdAt": "2026-09-25T08:12:15.083Z",
+            "updatedAt": "2026-09-25T08:12:17.138Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "d04d82e1-258e-4b00-85be-afba965212e3",
+            "name": "files",
+            "createdAt": "2026-09-25T08:12:27.427Z",
+            "updatedAt": "2026-09-25T08:12:29.529Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "a32ba60d-e0cd-4925-9afd-6552f2f02e0b",
+            "name": "designController",
+            "createdAt": "2026-09-25T08:12:41.124Z",
+            "updatedAt": "2026-09-25T08:12:43.869Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "0b7372ec-00c9-4d9b-8011-c6ce2f4830d1",
+            "name": "document",
+            "createdAt": "2026-09-25T08:12:54.165Z",
+            "updatedAt": "2026-09-25T08:12:57.213Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "dd44988e-8933-462e-977d-aca68bffb391",
+            "name": "voice",
+            "createdAt": "2026-09-25T08:13:04.414Z",
+            "updatedAt": "2026-09-25T08:13:06.859Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "ce5d91f6-5107-4df9-8786-a9e26bfa8293",
+            "name": "assistant",
+            "createdAt": "2026-09-25T08:13:45.193Z",
+            "updatedAt": "2026-09-25T08:13:47.651Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "ba824749-ffd3-433a-8937-9e0e04511ac6",
+        "projectVersionId": "b1053c5c-e8a3-4496-a134-249e4220f608",
+        "name": "radio-room",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-09-23T14:10:07.511Z",
+        "updatedAt": "2026-09-25T06:35:03.332Z",
+        "rootMachineId": "28338ac0-680f-49e6-95f4-fc0a9e7f01e5",
+        "machines": [
+          {
+            "machineId": "08c33e89-dd48-40ac-93a4-5b0b6d140541",
+            "name": "configImport",
+            "createdAt": "2026-09-23T14:10:48.898Z",
+            "updatedAt": "2026-09-23T14:10:50.788Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "a3fe4c0c-f4fd-4b93-b498-caa190a88713",
+            "name": "socket",
+            "createdAt": "2026-09-23T14:19:18.649Z",
+            "updatedAt": "2026-09-23T14:46:39.335Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "549ad6e8-cda9-4d56-9e50-8583c22938a3",
+            "name": "createRoomForm",
+            "createdAt": "2026-09-23T14:28:35.455Z",
+            "updatedAt": "2026-09-23T14:28:37.211Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b98f7b05-32f3-4acb-b99d-20b888c85931",
+            "name": "timer",
+            "createdAt": "2026-09-23T14:28:50.576Z",
+            "updatedAt": "2026-09-23T14:28:52.682Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "9efdee5c-9818-4603-8205-23e0fd414267",
+            "name": "addToQueueUi",
+            "createdAt": "2026-09-23T14:29:04.871Z",
+            "updatedAt": "2026-09-23T14:47:15.547Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "946be724-f132-4c9c-8041-f330c0293efa",
+            "name": "addToLibrary",
+            "createdAt": "2026-09-23T14:29:16.203Z",
+            "updatedAt": "2026-09-23T14:46:58.767Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "8a753ada-0e2f-487a-b3cf-82e61618b47c",
+            "name": "giftInbox",
+            "createdAt": "2026-09-23T14:29:33.046Z",
+            "updatedAt": "2026-09-23T14:29:35.206Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "6a9a0e73-7be1-45dd-baba-22fd1a2851f2",
+            "name": "adminListenerState",
+            "createdAt": "2026-09-23T14:29:54.256Z",
+            "updatedAt": "2026-09-23T14:29:56.384Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "28338ac0-680f-49e6-95f4-fc0a9e7f01e5",
+            "name": "admin",
+            "createdAt": "2026-09-23T14:30:07.441Z",
+            "updatedAt": "2026-09-25T06:35:03.332Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c0e2f79b-fe76-43ee-9742-58a936b62e40",
+            "name": "allReactions",
+            "createdAt": "2026-09-23T14:30:19.125Z",
+            "updatedAt": "2026-09-23T14:30:20.877Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "253a5252-f754-448c-8ee0-dfc159db7b7b",
+            "name": "allRoomsFetch",
+            "createdAt": "2026-09-23T14:30:31.262Z",
+            "updatedAt": "2026-09-23T14:30:33.197Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "2cb9d46b-1853-46cc-82a6-d901c242ef51",
+            "name": "audio",
+            "createdAt": "2026-09-23T14:30:40.620Z",
+            "updatedAt": "2026-09-23T14:30:44.124Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "8ef17f10-464f-4a08-94b2-59d56991182b",
+            "name": "auth",
+            "createdAt": "2026-09-23T14:30:51.648Z",
+            "updatedAt": "2026-09-23T14:30:54.590Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "6a13c2c9-0ea8-40e6-86ba-58207cdbcc0e",
+            "name": "catalog-browse",
+            "createdAt": "2026-09-23T14:31:01.644Z",
+            "updatedAt": "2026-09-23T14:31:04.479Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "e9066d85-f302-49d2-81f1-8d13076f0740",
+            "name": "chat",
+            "createdAt": "2026-09-23T14:31:13.945Z",
+            "updatedAt": "2026-09-23T14:31:16.014Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "393c8b8e-2627-4346-a07d-b306829bcdcb",
+            "name": "chatScrollTarget",
+            "createdAt": "2026-09-23T14:31:26.395Z",
+            "updatedAt": "2026-09-23T14:31:28.079Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c2c42a8c-14a1-44ab-9f59-f0f222d9637e",
+            "name": "coinGainFeedback",
+            "createdAt": "2026-09-23T14:31:43.303Z",
+            "updatedAt": "2026-09-23T14:31:45.326Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "249589ef-b8be-4a6f-bef3-488ba1c45e19",
+            "name": "createdRoomsFetch",
+            "createdAt": "2026-09-23T14:32:04.443Z",
+            "updatedAt": "2026-09-23T14:32:06.489Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "75f796ad-2cc1-4ecb-bf41-eee541f6c0e0",
+            "name": "search",
+            "createdAt": "2026-09-23T14:32:19.188Z",
+            "updatedAt": "2026-09-23T14:32:20.963Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c900b62c-ed2d-4bf9-95a1-dade7915512c",
+            "name": "dj",
+            "createdAt": "2026-09-23T14:32:31.100Z",
+            "updatedAt": "2026-09-23T14:32:33.088Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "1af5977a-6129-493f-b440-f2b203b2e647",
+            "name": "effectiveMetadataSources",
+            "createdAt": "2026-09-23T14:32:41.322Z",
+            "updatedAt": "2026-09-23T14:32:43.412Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c4eab47c-e0b0-4160-a085-660cd956288c",
+            "name": "errorHandler",
+            "createdAt": "2026-09-23T14:32:51.744Z",
+            "updatedAt": "2026-09-23T14:46:50.702Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "00955641-60c3-4c62-ad12-9801c06949a2",
+            "name": "feedback",
+            "createdAt": "2026-09-23T14:33:04.256Z",
+            "updatedAt": "2026-09-23T14:33:06.339Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "8e92bdfc-1ab0-4551-b870-ed48f08d5b4a",
+            "name": "feedback-response-form-(machine)",
+            "createdAt": "2026-09-23T14:33:17.493Z",
+            "updatedAt": "2026-09-23T14:33:51.128Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "a6964337-2342-4314-9cec-d23a7a346ac6",
+            "name": "gameSession",
+            "createdAt": "2026-09-23T14:34:05.554Z",
+            "updatedAt": "2026-09-23T14:34:07.684Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "7f379c7d-1801-412b-900b-227392fb28ed",
+            "name": "gameStateNav",
+            "createdAt": "2026-09-23T14:34:14.332Z",
+            "updatedAt": "2026-09-23T14:34:16.734Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "787977da-8f7b-48b1-ae75-a433b748ded2",
+            "name": "gameStateNewPluginTabs",
+            "createdAt": "2026-09-23T14:34:23.054Z",
+            "updatedAt": "2026-09-23T14:34:25.192Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "459fe1a9-e793-41f8-bac2-f1a35df21f43",
+            "name": "inventoryPeek",
+            "createdAt": "2026-09-23T14:34:32.331Z",
+            "updatedAt": "2026-09-23T14:34:34.150Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "90fed518-652d-4ca3-9064-79454c2760e1",
+            "name": "liveTransport",
+            "createdAt": "2026-09-23T14:34:43.694Z",
+            "updatedAt": "2026-09-23T14:34:45.825Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b67e1a04-deda-4941-b6a8-e25ea69676d7",
+            "name": "lobby",
+            "createdAt": "2026-09-23T14:34:52.351Z",
+            "updatedAt": "2026-09-23T14:34:54.545Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "8b5f7062-5668-48dd-8209-cb538b88618f",
+            "name": "mediaBridge",
+            "createdAt": "2026-09-23T14:35:02.154Z",
+            "updatedAt": "2026-09-23T14:35:04.378Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "faaed819-f3b4-4541-b7b5-59e0fb7969cc",
+            "name": "mediaItemTracks",
+            "createdAt": "2026-09-23T14:35:10.916Z",
+            "updatedAt": "2026-09-23T14:35:12.859Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "02d6bc3f-972e-4b5d-9490-7e2d4cd3043a",
+            "name": "metadataPreference",
+            "createdAt": "2026-09-23T14:35:19.217Z",
+            "updatedAt": "2026-09-23T14:35:20.972Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "a2516d3a-f789-4235-8f69-1483283fe48a",
+            "name": "metadata-source-auth",
+            "createdAt": "2026-09-23T14:35:28.171Z",
+            "updatedAt": "2026-09-23T14:35:29.979Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "79198543-ecaf-4298-af0c-4efca24827c1",
+            "name": "modals",
+            "createdAt": "2026-09-23T14:35:38.510Z",
+            "updatedAt": "2026-09-23T14:35:41.550Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "7337ae62-480c-40b2-8893-464ca8badae0",
+            "name": "notifications",
+            "createdAt": "2026-09-23T14:35:51.157Z",
+            "updatedAt": "2026-09-23T14:35:52.966Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "9fa60e4c-3312-46d7-a967-0fbb9b77b11a",
+            "name": "playlist",
+            "createdAt": "2026-09-23T14:36:03.513Z",
+            "updatedAt": "2026-09-23T14:36:05.515Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "88c12881-b87b-4bea-b4ef-576dfdfa98e7",
+            "name": "pluginComponent",
+            "createdAt": "2026-09-23T14:36:11.775Z",
+            "updatedAt": "2026-09-23T14:36:13.793Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "945372cf-802c-4580-a655-cbf24ac8514b",
+            "name": "pollCardDisplay",
+            "createdAt": "2026-09-23T14:36:21.912Z",
+            "updatedAt": "2026-09-23T14:36:24.350Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "2789279d-6be1-4219-93c6-f240bd2f1f21",
+            "name": "poll",
+            "createdAt": "2026-09-23T14:36:29.952Z",
+            "updatedAt": "2026-09-23T14:36:32.401Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "bb9d8443-9fe2-4f14-8af5-149d92d8156f",
+            "name": "queueList",
+            "createdAt": "2026-09-23T14:36:38.394Z",
+            "updatedAt": "2026-09-23T14:36:40.338Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "d2e553a6-1a58-455f-8c03-41de0065047d",
+            "name": "queue",
+            "createdAt": "2026-09-23T14:36:46.837Z",
+            "updatedAt": "2026-09-23T14:36:48.712Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "bfb6e81b-d453-4320-be63-de0830b20f95",
+            "name": "quickAccessPanels",
+            "createdAt": "2026-09-23T14:36:55.072Z",
+            "updatedAt": "2026-09-23T14:36:57.091Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "ee326cad-1d0b-4b7d-91e0-dd549ab903b1",
+            "name": "radioStream",
+            "createdAt": "2026-09-23T14:37:06.473Z",
+            "updatedAt": "2026-09-23T14:37:08.829Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "e30ffa71-241d-4e8e-b97f-6ad58b51e9ea",
+            "name": "reducedMotion",
+            "createdAt": "2026-09-23T14:37:16.407Z",
+            "updatedAt": "2026-09-23T14:37:18.323Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "063bcb09-da11-429e-a40c-9347c28c1ec9",
+            "name": "roomFetch",
+            "createdAt": "2026-09-23T14:37:28.901Z",
+            "updatedAt": "2026-09-23T14:37:31.031Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "0a127420-fb2b-43aa-95d4-67a99dd28808",
+            "name": "roomGameState",
+            "createdAt": "2026-09-23T14:37:37.419Z",
+            "updatedAt": "2026-09-23T14:37:39.721Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "fb0fcb74-1a4b-4032-8093-665d884d8a95",
+            "name": "roomLayout",
+            "createdAt": "2026-09-23T14:37:49.036Z",
+            "updatedAt": "2026-09-23T14:37:50.848Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "75d76c27-7d04-4a8d-80c5-4d8b6aa59e34",
+            "name": "roomSetup",
+            "createdAt": "2026-09-23T14:37:59.953Z",
+            "updatedAt": "2026-09-23T14:38:15.460Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "a376ecf9-fe8f-4e26-b426-cca735c944bf",
+            "name": "save-playlist",
+            "createdAt": "2026-09-23T14:38:23.019Z",
+            "updatedAt": "2026-09-23T14:38:25.100Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "e7c7edaf-4b44-4df9-a95e-82669d25c4a7",
+            "name": "saved-tracks",
+            "createdAt": "2026-09-23T14:38:31.675Z",
+            "updatedAt": "2026-09-23T14:38:33.463Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "ba5d2d57-d795-4ac3-b03a-5f519b454fab",
+            "name": "screenEffects",
+            "createdAt": "2026-09-23T14:38:44.277Z",
+            "updatedAt": "2026-09-23T14:38:46.279Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "087c24cf-1526-4c31-ac50-c959a381ae08",
+            "name": "scrollFollow",
+            "createdAt": "2026-09-23T14:38:57.264Z",
+            "updatedAt": "2026-09-23T14:38:59.021Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f615d1a3-2814-48f4-af2f-1255c6ae5c20",
+            "name": "settings",
+            "createdAt": "2026-09-23T14:39:04.856Z",
+            "updatedAt": "2026-09-23T14:39:06.903Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c4a157cd-566d-4c80-b354-4f2331a00d33",
+            "name": "sharedTicker",
+            "createdAt": "2026-09-23T14:39:13.234Z",
+            "updatedAt": "2026-09-23T14:39:15.398Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "1cf8dbcd-8f4d-45d8-a99d-261f57d3043f",
+            "name": "shopQtyAnimation",
+            "createdAt": "2026-09-23T14:39:21.880Z",
+            "updatedAt": "2026-09-23T14:39:24.062Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "dbb7be79-80fa-4594-8489-84c234b93773",
+            "name": "slider",
+            "createdAt": "2026-09-23T14:39:29.820Z",
+            "updatedAt": "2026-09-23T14:39:31.888Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "8ca999b7-9de0-49f3-a272-442bd23a56ca",
+            "name": "soundEffects",
+            "createdAt": "2026-09-23T14:39:38.601Z",
+            "updatedAt": "2026-09-23T14:39:40.674Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "add380ea-a44d-46b3-bc1c-3d606b65e354",
+            "name": "soundEffectsPreference",
+            "createdAt": "2026-09-23T14:39:47.804Z",
+            "updatedAt": "2026-09-23T14:39:49.818Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f8ec156c-b9a3-4c94-9deb-e6c11a878724",
+            "name": "theme",
+            "createdAt": "2026-09-23T14:39:59.070Z",
+            "updatedAt": "2026-09-23T14:40:01.076Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "2f5065e4-1247-4442-8c8b-634ffd398e9d",
+            "name": "toggleableCollection",
+            "createdAt": "2026-09-23T14:40:48.512Z",
+            "updatedAt": "2026-09-23T14:40:50.616Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "2a1696a0-08c2-4553-8a34-ff15eb6444c6",
+            "name": "trackPreview",
+            "createdAt": "2026-09-23T14:41:10.154Z",
+            "updatedAt": "2026-09-23T14:41:12.111Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "becf8176-dfac-48fe-a1c2-5388b075a13f",
+            "name": "track-search",
+            "createdAt": "2026-09-23T14:41:18.038Z",
+            "updatedAt": "2026-09-23T14:41:19.887Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b1c781f6-2c3e-4324-b485-e595d8a1e81b",
+            "name": "trade",
+            "createdAt": "2026-09-23T14:41:31.136Z",
+            "updatedAt": "2026-09-23T14:41:33.566Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c93bbac1-d20a-4804-8122-ec51422c0089",
+            "name": "typing",
+            "createdAt": "2026-09-23T14:41:42.838Z",
+            "updatedAt": "2026-09-23T14:41:44.672Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "2843d164-eb8b-4f73-9eb8-312dbb9b4819",
+            "name": "userGameState",
+            "createdAt": "2026-09-23T14:41:50.982Z",
+            "updatedAt": "2026-09-23T14:41:53.526Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "85affd9d-8d91-4004-a783-0ac29a6b0b75",
+            "name": "users",
+            "createdAt": "2026-09-23T14:41:59.040Z",
+            "updatedAt": "2026-09-23T14:42:00.940Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f5182cd7-a6b3-44a4-8850-b4852d92aab5",
+            "name": "whatsNew",
+            "createdAt": "2026-09-23T14:42:09.240Z",
+            "updatedAt": "2026-09-23T14:42:11.341Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "d8ddc331-8586-4c5b-8e7a-a7eba66a6f91",
+        "projectVersionId": "126b2844-96c8-4108-b1fc-de7b9f18f549",
+        "name": "portabletext-editor",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-09-22T16:13:47.193Z",
+        "updatedAt": "2026-09-23T15:38:52.268Z",
+        "rootMachineId": "dda2dfb9-a477-4d3c-ad9c-60e4b34e8d59",
+        "machines": [
+          {
+            "machineId": "5b648f53-3188-4260-9e03-837522417552",
+            "name": "editor",
+            "createdAt": "2026-09-22T16:14:13.513Z",
+            "updatedAt": "2026-09-23T15:25:40.924Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "1d1daff9-d446-461c-90c0-24b9893ad764",
+            "name": "editor - sync",
+            "createdAt": "2026-09-22T16:14:38.274Z",
+            "updatedAt": "2026-09-23T15:38:52.268Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "3d6b9596-5e5e-4a99-b85e-e50787da5a2b",
+            "name": "editor - range decorations",
+            "createdAt": "2026-09-22T16:15:13.792Z",
+            "updatedAt": "2026-09-22T16:38:25.953Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "cdb13663-241d-4bb4-9d11-7d3cfa115fa3",
+            "name": "editor - validate selection",
+            "createdAt": "2026-09-22T16:15:41.083Z",
+            "updatedAt": "2026-09-22T16:34:58.161Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f1ede3f0-9978-4e3b-a544-b70ba119acab",
+            "name": "play - editor",
+            "createdAt": "2026-09-22T16:17:07.718Z",
+            "updatedAt": "2026-09-22T16:38:52.144Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b16d4882-08b2-4eb1-b8db-6436ae3a7179",
+            "name": "play",
+            "createdAt": "2026-09-22T16:18:25.758Z",
+            "updatedAt": "2026-09-23T15:25:07.185Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "32d212b7-f0f5-406c-81cb-d9980776a8bd",
+            "name": "play - highlight",
+            "createdAt": "2026-09-22T16:19:08.081Z",
+            "updatedAt": "2026-09-22T16:38:59.470Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "77835eeb-4d63-436b-b968-b71155ad7f47",
+            "name": "plugin - emoji picker",
+            "createdAt": "2026-09-22T16:20:42.472Z",
+            "updatedAt": "2026-09-22T16:36:53.227Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "fa5285ff-808b-43ad-95c8-19b57a7f93b2",
+            "name": "plugin - input rule",
+            "createdAt": "2026-09-22T16:21:44.131Z",
+            "updatedAt": "2026-09-22T16:37:34.700Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "495f09cb-5caf-4822-b923-c6f15987730f",
+            "name": "plugin - value sync",
+            "createdAt": "2026-09-22T16:22:21.950Z",
+            "updatedAt": "2026-09-22T16:38:06.345Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "9ab4f515-2b05-4801-ae84-72303d536aeb",
+            "name": "plugin - typeahead picker",
+            "createdAt": "2026-09-22T16:22:58.553Z",
+            "updatedAt": "2026-09-22T16:37:59.547Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c696fabe-4c64-453c-a00e-174eb220aa48",
+            "name": "plugin - annotation button",
+            "createdAt": "2026-09-22T16:23:43.774Z",
+            "updatedAt": "2026-09-22T16:39:05.554Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "311a28f9-e41c-43d6-8e63-9ac07b375b63",
+            "name": "plugin - annotation popover",
+            "createdAt": "2026-09-22T16:23:59.717Z",
+            "updatedAt": "2026-09-23T15:25:04.692Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "355afce6-8ad0-42b4-b5ad-7d28a52b448b",
+            "name": "plugin - block object button",
+            "createdAt": "2026-09-22T16:24:15.306Z",
+            "updatedAt": "2026-09-22T16:39:15.924Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f6c18949-0bbf-411a-85e2-9404133900df",
+            "name": "plugin - block object popover",
+            "createdAt": "2026-09-22T16:24:27.671Z",
+            "updatedAt": "2026-09-22T16:39:25.083Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "dda2dfb9-a477-4d3c-ad9c-60e4b34e8d59",
+            "name": "plugin - decorator button",
+            "createdAt": "2026-09-22T16:24:38.721Z",
+            "updatedAt": "2026-09-23T15:25:01.928Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "77465ae0-e7a0-4617-88cc-86b3668b58c7",
+            "name": "plugin - decorator keyboard shortcut",
+            "createdAt": "2026-09-22T16:24:47.961Z",
+            "updatedAt": "2026-09-22T16:36:46.361Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "4cd5864f-2384-42af-9262-a73dacb39284",
+            "name": "plugin - history buttons",
+            "createdAt": "2026-09-22T16:24:59.170Z",
+            "updatedAt": "2026-09-22T16:37:15.181Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "ca9be44b-fdac-4b6f-8865-b3e0baf5d2fa",
+            "name": "plugin - inline object button",
+            "createdAt": "2026-09-22T16:25:11.942Z",
+            "updatedAt": "2026-09-22T16:37:21.725Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "55dc8d17-6951-4664-810d-2d5cb096ca48",
+            "name": "plugin - inline object popover",
+            "createdAt": "2026-09-22T16:25:21.927Z",
+            "updatedAt": "2026-09-22T16:37:27.681Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "5a2a5390-f14c-4a9d-95a3-a2aad58f0b52",
+            "name": "plugin - list button",
+            "createdAt": "2026-09-22T16:25:31.782Z",
+            "updatedAt": "2026-09-22T16:37:39.988Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "e175793d-00db-4fd4-8df4-de61acc60bae",
+            "name": "plugin - style keyboard shortcuts",
+            "createdAt": "2026-09-22T16:25:45.184Z",
+            "updatedAt": "2026-09-22T16:37:44.976Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "84208f79-6266-4ca0-a15c-ae1d38b639cb",
+            "name": "plugin - style selector",
+            "createdAt": "2026-09-22T16:25:55.664Z",
+            "updatedAt": "2026-09-22T16:37:52.510Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "53703b97-b7d8-4576-8119-441c0a521a73",
+        "projectVersionId": "351d2e4f-1007-4c19-939c-e1674fdcfb2f",
+        "name": "Drafts ✍️",
+        "ownership": "personal",
+        "description": "Drafts project contains all your drafts created at state.new",
+        "visibility": "public",
+        "createdAt": "2024-04-17T19:31:20.704Z",
+        "updatedAt": "2026-11-09T08:09:28.204Z",
+        "rootMachineId": "345dc23e-a565-4d21-ad16-e58982fac617",
+        "machines": [
+          {
+            "machineId": "a3fc4af9-cd44-4a7c-93ef-9aafcd3c8248",
+            "name": "workspace",
+            "createdAt": "2025-09-29T15:58:26.162Z",
+            "updatedAt": "2026-09-22T17:40:25.491Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "345dc23e-a565-4d21-ad16-e58982fac617",
+            "name": "agent",
+            "createdAt": "2025-09-29T15:59:56.448Z",
+            "updatedAt": "2026-11-09T08:09:28.204Z",
+            "format": "xgraph",
+            "locked": false
+          },
+          {
+            "machineId": "a98c6e04-a359-481a-b0fa-208d7ee782fc",
+            "name": "executeToolCall",
+            "createdAt": "2025-09-29T16:00:33.961Z",
+            "updatedAt": "2026-09-22T17:39:31.646Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "cace9cae-4573-4a28-b584-97f03f30dd22",
+            "name": "session",
+            "createdAt": "2025-09-29T16:00:57.819Z",
+            "updatedAt": "2026-09-22T17:40:19.834Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f2b4afc5-9382-4c69-a343-6899196c76a0",
+            "name": "__ANNOTATIONS__",
+            "createdAt": "2025-10-02T07:20:01.284Z",
+            "updatedAt": "2026-09-22T16:51:01.056Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "6b90f71f-0dc9-41cc-a743-e46bf9b366dc",
+            "name": "nodeLifeCycle",
+            "createdAt": "2025-11-15T00:23:51.303Z",
+            "updatedAt": "2026-09-22T17:39:57.756Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "9d708f3e-dadd-4847-b087-907c78a9abc2",
+            "name": "recursiveTreeMachine",
+            "createdAt": "2026-01-11T16:26:58.146Z",
+            "updatedAt": "2026-09-22T17:31:22.888Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "45729758-570a-46a6-83e1-5220f206ec4a",
+        "projectVersionId": "ab4a54f7-c637-4678-85d7-9ca6f81e4152",
+        "name": "UIUX",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-05-09T04:02:43.855Z",
+        "updatedAt": "2026-11-08T23:26:02.933Z",
+        "rootMachineId": "f277ec20-61c6-4e74-94fd-d97ea2d0db85",
+        "machines": [
+          {
+            "machineId": "f277ec20-61c6-4e74-94fd-d97ea2d0db85",
+            "name": "Untitled",
+            "createdAt": "2026-05-09T04:02:47.818Z",
+            "updatedAt": "2026-09-22T16:51:18.349Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "fd576090-8a6d-46e9-a62d-abcc23d54ee4",
+            "name": "newMachine",
+            "createdAt": "2026-11-08T23:26:01.442Z",
+            "updatedAt": "2026-11-08T23:26:02.933Z",
+            "format": "xgraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "c75e5168-1dfd-4db1-b856-57ee4877083d",
+        "projectVersionId": "1557f122-5e06-4a41-8d35-1da8bba51848",
+        "name": "viz",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-04-25T15:37:19.365Z",
+        "updatedAt": "2026-09-22T16:51:10.333Z",
+        "rootMachineId": "d725bbdb-bb73-43dc-8b1b-00b2ed7b2f6c",
+        "machines": [
+          {
+            "machineId": "d725bbdb-bb73-43dc-8b1b-00b2ed7b2f6c",
+            "name": "sessionTimeout",
+            "createdAt": "2026-04-25T15:37:37.433Z",
+            "updatedAt": "2026-09-22T16:51:07.644Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "12515cdb-753b-44f2-9686-a58e82f9894d",
+            "name": "trafficLight",
+            "createdAt": "2026-04-25T16:16:22.925Z",
+            "updatedAt": "2026-04-25T16:17:46.051Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "c37d2859-a079-4261-a4cd-6927c4cebf39",
+            "name": "savage",
+            "createdAt": "2026-04-25T16:16:43.028Z",
+            "updatedAt": "2026-04-25T16:17:14.909Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "093b8b04-78be-4815-92c3-dcfe8d996fa6",
+            "name": "Demo Machine",
+            "createdAt": "2026-05-03T17:26:57.132Z",
+            "updatedAt": "2026-09-22T16:51:10.333Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "68e43b1c-a5b4-4d8e-8839-87d21d22d0d8",
+        "projectVersionId": "ad7f3fa3-f8c8-49bc-86c9-82201b7baf7b",
+        "name": "stately-capture",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2026-04-20T04:01:18.943Z",
+        "updatedAt": "2026-09-22T16:44:02.419Z",
+        "rootMachineId": "183fc7ff-5dc1-47e8-9a25-cb8678f03c6e",
+        "machines": [
+          {
+            "machineId": "bf43864a-d9e9-4aea-b663-b0fd7364d60e",
+            "name": "authMachine",
+            "createdAt": "2026-04-24T04:29:17.862Z",
+            "updatedAt": "2026-09-22T16:43:00.371Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "ef68c342-70c9-48c0-94be-c80f0b53f81a",
+            "name": "cacheCodeChangesMachine",
+            "createdAt": "2026-04-24T04:29:49.430Z",
+            "updatedAt": "2026-09-22T16:43:03.429Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "5c0c3c58-cc09-4542-ba95-17e471083713",
+            "name": "elkMachine",
+            "createdAt": "2026-04-24T04:31:09.421Z",
+            "updatedAt": "2026-09-22T16:43:08.185Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "7ced9f6e-219f-427f-aacf-ac5d0c7c00b3",
+            "name": "likesMachine",
+            "createdAt": "2026-04-24T04:31:40.944Z",
+            "updatedAt": "2026-09-22T16:43:14.447Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "3cee9bc7-ec57-4b69-b3b0-8cb9160ab2b2",
+            "name": "notificationMachine",
+            "createdAt": "2026-04-24T04:32:03.360Z",
+            "updatedAt": "2026-09-22T16:43:23.385Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b636fed1-05be-4cfb-bc29-06820108f52b",
+            "name": "paletteMachine",
+            "createdAt": "2026-04-24T04:32:37.220Z",
+            "updatedAt": "2026-09-22T16:42:10.649Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "dd77c04e-4a7d-453d-bb3f-d1deaf142fb3",
+            "name": "shareMachine",
+            "createdAt": "2026-04-24T04:34:09.398Z",
+            "updatedAt": "2026-09-22T16:43:59.295Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "183fc7ff-5dc1-47e8-9a25-cb8678f03c6e",
+            "name": "sourceMachine",
+            "createdAt": "2026-04-24T04:34:34.223Z",
+            "updatedAt": "2026-09-22T16:44:02.419Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "b263fb46-6821-41c7-99b0-4469a4f1a991",
+            "name": "systemMachine",
+            "createdAt": "2026-04-24T04:35:10.751Z",
+            "updatedAt": "2026-09-22T16:43:49.903Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "cc0ca877-400c-4215-a283-8b011c52cc53",
+            "name": "testSimpleMachine",
+            "createdAt": "2026-04-24T04:36:03.899Z",
+            "updatedAt": "2026-09-22T16:43:57.645Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "feddb458-b459-4283-a674-1390fb7a28c7",
+            "name": "testMachine",
+            "createdAt": "2026-04-24T04:36:03.913Z",
+            "updatedAt": "2026-09-22T16:43:54.236Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "690fa769-f3d3-4a7b-8cd3-8eef58549e63",
+            "name": "testInvokedMachine",
+            "createdAt": "2026-04-24T04:38:01.227Z",
+            "updatedAt": "2026-09-22T16:43:51.937Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "24703966-c74c-43f0-9bb9-9c2cf154e24e",
+            "name": "mediaPlayer",
+            "createdAt": "2026-04-25T16:03:21.579Z",
+            "updatedAt": "2026-09-22T16:43:20.080Z",
+            "format": "digraph",
+            "locked": false
+          },
+          {
+            "machineId": "f03d77be-e5fa-4fdf-b977-ed186af493c4",
+            "name": "savage",
+            "createdAt": "2026-04-25T16:04:11.325Z",
+            "updatedAt": "2026-09-22T16:42:18.337Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      },
+      {
+        "projectId": "d3e9f9dc-ac07-4677-acd9-e9636b388f17",
+        "projectVersionId": "5cf5ee8e-1a48-495d-9a49-71142d2207fa",
+        "name": "system-actor-model",
+        "ownership": "personal",
+        "description": "",
+        "visibility": "public",
+        "createdAt": "2025-10-06T07:55:38.283Z",
+        "updatedAt": "2026-04-25T16:16:14.792Z",
+        "rootMachineId": "3d397879-711a-45df-a996-a7bb7a78a3fa",
+        "machines": [
+          {
+            "machineId": "3d397879-711a-45df-a996-a7bb7a78a3fa",
+            "name": "rootMachine",
+            "createdAt": "2025-10-06T07:55:41.485Z",
+            "updatedAt": "2026-04-25T16:16:14.792Z",
+            "format": "digraph",
+            "locked": false
+          }
+        ],
+        "permissions": {
+          "canEdit": true
+        },
+        "allowedVisibility": ["public"]
+      }
+    ],
+    "versions": [
+      {
+        "machineVersionId": "5bd97ad0-9948-43e7-b279-5246f0258f9a",
+        "machineId": "345dc23e-a565-4d21-ad16-e58982fac617",
+        "versionNumber": 2,
+        "name": "Beta editor version",
+        "status": "Committed",
+        "parentVersionId": "8535bd48-85da-4053-8a71-ac83d61290aa",
+        "createdAt": "2026-11-09T08:06:47.221Z",
+        "updatedAt": "2026-11-09T08:06:47.221Z",
+        "canRecover": false,
+        "retainedUntil": "2026-12-09T08:06:47.221Z",
+        "format": "xgraph"
+      },
+      {
+        "machineVersionId": "8535bd48-85da-4053-8a71-ac83d61290aa",
+        "machineId": "345dc23e-a565-4d21-ad16-e58982fac617",
+        "versionNumber": 1,
+        "name": "Original editor version",
+        "status": "Committed",
+        "parentVersionId": null,
+        "createdAt": "2026-11-09T08:06:47.221Z",
+        "updatedAt": "2026-11-09T08:06:47.221Z",
+        "canRecover": false,
+        "retainedUntil": "2026-12-09T08:06:47.221Z",
+        "format": "digraph"
+      }
+    ]
+  }
+]
