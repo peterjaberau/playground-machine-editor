@@ -1,0 +1,86 @@
+{
+  "workspaceLabel": "Stately",
+  "loadingLabel": "Loading project",
+  "unavailableTitle": "Project unavailable",
+  "resetActionLabel": "Reset data",
+  "savedStatusLabel": "Saved",
+  "savingStatusLabel": "Saving…",
+  "saveErrorStatusLabel": "Save error",
+  "actionLabels": {
+    "project.create": {
+      "pending": "Creating project…",
+      "success": "Project created",
+      "error": "Project could not be created"
+    },
+    "project.rename": {
+      "pending": "Renaming project…",
+      "success": "Project renamed",
+      "error": "Project could not be renamed"
+    },
+    "project.delete": {
+      "pending": "Deleting project…",
+      "success": "Project deleted",
+      "error": "Project could not be deleted"
+    },
+    "project.setRootMachine": {
+      "pending": "Setting root machine…",
+      "success": "Root machine updated",
+      "error": "Root machine could not be updated"
+    },
+    "machine.create": {
+      "pending": "Creating machine…",
+      "success": "Machine created",
+      "error": "Machine could not be created"
+    },
+    "machine.rename": {
+      "pending": "Renaming machine…",
+      "success": "Machine renamed",
+      "error": "Machine could not be renamed"
+    },
+    "machine.move": {
+      "pending": "Moving machine…",
+      "success": "Machine moved",
+      "error": "Machine could not be moved"
+    },
+    "machine.copy": {
+      "pending": "Copying machine…",
+      "success": "Machine copied",
+      "error": "Machine could not be copied"
+    },
+    "machine.duplicate": {
+      "pending": "Duplicating machine…",
+      "success": "Machine duplicated",
+      "error": "Machine could not be duplicated"
+    },
+    "machine.version": {
+      "pending": "Saving version…",
+      "success": "Version saved",
+      "error": "Version could not be saved"
+    },
+    "machine.restore": {
+      "pending": "Restoring version…",
+      "success": "Version restored",
+      "error": "Version could not be restored"
+    },
+    "machine.delete": {
+      "pending": "Deleting machine…",
+      "success": "Machine deleted",
+      "error": "Machine could not be deleted"
+    },
+    "machine.restoreDeleted": {
+      "pending": "Restoring machine…",
+      "success": "Machine restored",
+      "error": "Machine could not be restored"
+    },
+    "machine.purge": {
+      "pending": "Deleting machine permanently…",
+      "success": "Machine permanently deleted",
+      "error": "Machine could not be deleted"
+    },
+    "workspace.import": {
+      "pending": "Importing backup…",
+      "success": "Backup imported",
+      "error": "Backup could not be imported"
+    }
+  }
+}

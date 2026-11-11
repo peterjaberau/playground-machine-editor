@@ -1,0 +1,23 @@
+{
+  "capabilities": {
+    "edit": true,
+    "ai": true
+  },
+  "embeddedEditing": false,
+  "localWorkspace": false,
+  "hostedSimulation": false,
+  "features": {
+    "comments": false,
+    "versions": "view",
+    "ai": true,
+    "teams": false
+  },
+  "plan": {
+    "name": "community",
+    "upgradeUrl": "https://stately.ai/pricing"
+  },
+  "aiCreditsEnabled": true,
+  "resourceScope": {
+    "projectId": "53703b97-b7d8-4576-8119-441c0a521a73"
+  }
+}

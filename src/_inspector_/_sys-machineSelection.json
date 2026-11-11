@@ -1,0 +1,98 @@
+{
+  "id": "machineSelection",
+  "context": {
+    "selectedMachineId": "345dc23e-a565-4d21-ad16-e58982fac617",
+    "error": null
+  },
+  "initial": "loading",
+  "on": {
+    "SELECT": "[Function]",
+    "CLEAR": {
+      "target": ".unselected",
+      "context": {
+        "selectedMachineId": null,
+        "error": null
+      }
+    },
+    "RESET": "[Function]",
+    "FAILED": {},
+    "READY": "[Function]"
+  },
+  "states": {
+    "unselected": {},
+    "loading": {
+      "on": {
+        "FAILED": "[Function]"
+      }
+    },
+    "ready": {},
+    "error": {
+      "on": {
+        "RETRY": {
+          "target": "loading",
+          "context": {
+            "error": null
+          }
+        }
+      }
+    }
+  },
+  "schemas": {
+    "context": {
+      "~standard": {
+        "version": 1,
+        "vendor": "xstate.types",
+        "validate": "[Function]"
+      }
+    },
+    "events": {
+      "SELECT": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      },
+      "CLEAR": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      },
+      "RESET": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      },
+      "READY": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      },
+      "FAILED": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      },
+      "RETRY": {
+        "~standard": {
+          "version": 1,
+          "vendor": "xstate.types",
+          "validate": "[Function]"
+        }
+      }
+    },
+    "internalEvents": "[Undefined]",
+    "actions": "[Undefined]",
+    "guards": "[Undefined]",
+    "emitted": "[Undefined]",
+    "children": "[Undefined]"
+  }
+}

@@ -1,0 +1,1280 @@
+{
+  "machineId": "cace9cae-4573-4a28-b584-97f03f30dd22",
+  "name": "session",
+  "projectId": "53703b97-b7d8-4576-8119-441c0a521a73",
+  "projectVersionId": "351d2e4f-1007-4c19-939c-e1674fdcfb2f",
+  "definition": {
+    "id": "cace9cae-4573-4a28-b584-97f03f30dd22",
+    "edges": [
+      {
+        "id": "session.Agent.Stopping#agent.done[0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "clearAgentRef",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.done"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.Stopping",
+        "target": "session.Agent.AgentDone",
+        "position": {
+          "x": 1922,
+          "y": 2073
+        },
+        "uniqueId": "f9us64qyp0t"
+      },
+      {
+        "id": "session.Agent.Stopping#always[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "isAgentRefActive",
+            "params": {}
+          },
+          "actions": [],
+          "eventTypeData": {
+            "type": "always"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.Stopping",
+        "position": {
+          "x": 1686,
+          "y": 2305
+        },
+        "uniqueId": "4ywievxl98v"
+      },
+      {
+        "id": "session.Agent.Stopping#always[1]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "always"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.Stopping",
+        "target": "session.Agent.AgentDone",
+        "position": {
+          "x": 1539,
+          "y": 2098
+        },
+        "uniqueId": "r1ggp3r7ub"
+      },
+      {
+        "id": "session.Agent.Stopping#xstate.after(1000)#session.Agent.Stopping[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "after",
+            "delay": "1000"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.Stopping",
+        "target": "session.Agent.AgentDone",
+        "position": {
+          "x": 1747,
+          "y": 2098
+        },
+        "uniqueId": "5zcykikgk9o"
+      },
+      {
+        "id": "session.Agent.UsingNonReadOnlyTools#agent.paused[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.paused"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingNonReadOnlyTools",
+        "target": "session.Agent.UsingNonReadOnlyTools.Paused",
+        "position": {
+          "x": 2246,
+          "y": 1693
+        },
+        "uniqueId": "2wadn1ahyy2"
+      },
+      {
+        "id": "session.Agent.UsingNonReadOnlyTools#agent.resumed[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.resumed"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingNonReadOnlyTools",
+        "target": "session.Agent.UsingNonReadOnlyTools.Running",
+        "position": {
+          "x": 2457,
+          "y": 1693
+        },
+        "uniqueId": "ip7m7590qqi"
+      },
+      {
+        "id": "session.Agent.UsingNonReadOnlyTools#agent.usingTool[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.usingTool"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingNonReadOnlyTools",
+        "position": {
+          "x": 2367,
+          "y": 1980
+        },
+        "uniqueId": "xbse28y9eqf"
+      },
+      {
+        "id": "session.Agent.UsingReadOnlyTools.Paused#agent.usingTool[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "inline:session.Agent.UsingReadOnlyTools.Paused#agent.usingTool[-1]#guard",
+            "params": {}
+          },
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "markUsedNonReadOnlyTools",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.usingTool"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingReadOnlyTools.Paused",
+        "target": "session.Agent.UsingNonReadOnlyTools.Paused",
+        "position": {
+          "x": 2140,
+          "y": 1401
+        },
+        "uniqueId": "j7k61r430r9"
+      },
+      {
+        "id": "session.Agent.UsingReadOnlyTools.Running#agent.usingTool[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "inline:session.Agent.UsingReadOnlyTools.Running#agent.usingTool[-1]#guard",
+            "params": {}
+          },
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "markUsedNonReadOnlyTools",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.usingTool"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingReadOnlyTools.Running",
+        "target": "session.Agent.UsingNonReadOnlyTools.Running",
+        "position": {
+          "x": 2479,
+          "y": 1401
+        },
+        "uniqueId": "s6yjbljhgbg"
+      },
+      {
+        "id": "session.Agent.UsingReadOnlyTools#agent.paused[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.paused"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingReadOnlyTools",
+        "target": "session.Agent.UsingReadOnlyTools.Paused",
+        "position": {
+          "x": 2962,
+          "y": 1662
+        },
+        "uniqueId": "kd8gt41ik2g"
+      },
+      {
+        "id": "session.Agent.UsingReadOnlyTools#agent.resumed[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.resumed"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingReadOnlyTools",
+        "target": "session.Agent.UsingReadOnlyTools.Running",
+        "position": {
+          "x": 2743,
+          "y": 1662
+        },
+        "uniqueId": "q1mx29y6m3n"
+      },
+      {
+        "id": "session.Agent.UsingReadOnlyTools#agent.usingTool[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.usingTool"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent.UsingReadOnlyTools",
+        "position": {
+          "x": 2988,
+          "y": 1980
+        },
+        "uniqueId": "jqdiwlw3xg"
+      },
+      {
+        "id": "session.Agent#agent.done[0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session.Agent#agent.done[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "agent.done"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent",
+        "target": "session.Agent.AgentDone",
+        "position": {
+          "x": 1903,
+          "y": 1401
+        },
+        "uniqueId": "eph3tlong9t"
+      },
+      {
+        "id": "session.Agent#stop[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "isAgentRefActive",
+            "params": {}
+          },
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "stopAgent",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "stop"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent",
+        "target": "session.Agent.Stopping",
+        "position": {
+          "x": 1604,
+          "y": 1401
+        },
+        "uniqueId": "7zicvyq2dy"
+      },
+      {
+        "id": "session.Agent#stop[1]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "stop"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent",
+        "target": "session.Agent.AgentDone",
+        "position": {
+          "x": 1698,
+          "y": 1716
+        },
+        "uniqueId": "w7llmajtwnf"
+      },
+      {
+        "id": "session.Agent#done.state.session.Agent[0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "state.done"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.Agent",
+        "target": "session.Done",
+        "position": {
+          "x": 1408,
+          "y": 734
+        },
+        "uniqueId": "ynepgu6luq"
+      },
+      {
+        "id": "session.ProcessingQueuedMessages#always[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "inline:session.ProcessingQueuedMessages#always[-1]#guard",
+            "params": {}
+          },
+          "actions": [],
+          "eventTypeData": {
+            "type": "always"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.ProcessingQueuedMessages",
+        "target": "session.SavingMessageAndSpawningAgent",
+        "position": {
+          "x": 1876,
+          "y": 724
+        },
+        "uniqueId": "n1daumw1ys"
+      },
+      {
+        "id": "session.ProcessingQueuedMessages#always[1]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "always"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.ProcessingQueuedMessages",
+        "target": "session.Done",
+        "position": {
+          "x": 1409,
+          "y": 259
+        },
+        "uniqueId": "0ppc2412p40a"
+      },
+      {
+        "id": "session.SavingMessageAndSpawningAgent#done.invoke.session.SavingMessageAndSpawningAgent:invocation[0][0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session.SavingMessageAndSpawningAgent#done.invoke.session.SavingMessageAndSpawningAgent:invocation[0][-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "invocation.done",
+            "invocationId": "session.SavingMessageAndSpawningAgent:invocation[0]"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.SavingMessageAndSpawningAgent",
+        "target": "session.Agent",
+        "position": {
+          "x": 1601,
+          "y": 1092
+        },
+        "uniqueId": "92wby1u0auk"
+      },
+      {
+        "id": "session.SavingMessageAndSpawningAgent#error.platform.session.SavingMessageAndSpawningAgent:invocation[0][0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "assignEventError",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "invocation.error",
+            "invocationId": "session.SavingMessageAndSpawningAgent:invocation[0]"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.SavingMessageAndSpawningAgent",
+        "target": "session.Done",
+        "position": {
+          "x": 1552,
+          "y": 709
+        },
+        "uniqueId": "qcsb0a2tugi"
+      },
+      {
+        "id": "session.UpdatingSession#done.invoke.session.UpdatingSession:invocation[0][0]",
+        "data": {
+          "actions": [],
+          "eventTypeData": {
+            "type": "invocation.done",
+            "invocationId": "session.UpdatingSession:invocation[0]"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.UpdatingSession",
+        "target": "session.ProcessingQueuedMessages",
+        "position": {
+          "x": 1958,
+          "y": 374
+        },
+        "uniqueId": "6qnvi0qvgau"
+      },
+      {
+        "id": "session.UpdatingSession#error.platform.session.UpdatingSession:invocation[0][0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "assignEventError",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "invocation.error",
+            "invocationId": "session.UpdatingSession:invocation[0]"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session.UpdatingSession",
+        "target": "session.Done",
+        "position": {
+          "x": 1548,
+          "y": 349
+        },
+        "uniqueId": "43zv6yp4025"
+      },
+      {
+        "id": "session#*[0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session#*[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "wildcard"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session",
+        "position": {
+          "x": 12,
+          "y": 52
+        },
+        "uniqueId": "wqrx8rqkgd"
+      },
+      {
+        "id": "session#addMessage[0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session#addMessage[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "addMessage"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session",
+        "position": {
+          "x": 415,
+          "y": 52
+        },
+        "uniqueId": "gu7hgg29pa"
+      },
+      {
+        "id": "session#stop[0]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session#stop[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "stop"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session",
+        "position": {
+          "x": 219,
+          "y": 52
+        },
+        "uniqueId": "5jn94cbtb4"
+      },
+      {
+        "id": "session#updateInteractiveToolCall[0]",
+        "data": {
+          "guard": {
+            "kind": "named",
+            "type": "inline:session#updateInteractiveToolCall[-1]#guard",
+            "params": {}
+          },
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session#updateInteractiveToolCall[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "updateInteractiveToolCall"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session",
+        "position": {
+          "x": 631,
+          "y": 52
+        },
+        "uniqueId": "okd6d9pb1l"
+      },
+      {
+        "id": "session#updateInteractiveToolCall[1]",
+        "data": {
+          "actions": [
+            {
+              "kind": "named",
+              "action": {
+                "type": "inline:session#updateInteractiveToolCall[-1]#transition[0]",
+                "params": {}
+              }
+            }
+          ],
+          "eventTypeData": {
+            "type": "named",
+            "eventType": "updateInteractiveToolCall"
+          }
+        },
+        "size": {
+          "width": 0,
+          "height": 0
+        },
+        "source": "session",
+        "position": {
+          "x": 1017,
+          "y": 52
+        },
+        "uniqueId": "7dte16pwa08"
+      }
+    ],
+    "context": "{{({ input }) => {\n        return {\n            agent: input.agent,\n            appConfig: input.appConfig,\n            llmRequestTimeoutMs: input.llmRequestTimeoutMs ?? 5 * 60 * 1000,\n            maxStepCount: input.maxStepCount ?? 50,\n            model: input.model,\n            parentRef: input.parentRef,\n            queuedMessages: input.queuedMessages,\n            sessionId: input.sessionId,\n            usedNonReadOnlyTools: false,\n        };\n    }}}",
+    "schemas": {
+      "tags": {},
+      "input": null,
+      "actors": {},
+      "delays": {},
+      "events": {
+        "stop": {
+          "type": "object",
+          "properties": {}
+        },
+        "addMessage": {
+          "type": "object",
+          "properties": {}
+        },
+        "agent.done": {
+          "type": "object",
+          "properties": {}
+        },
+        "agent.paused": {
+          "type": "object",
+          "properties": {}
+        },
+        "agent.resumed": {
+          "type": "object",
+          "properties": {}
+        },
+        "agent.usingTool": {
+          "type": "object",
+          "properties": {}
+        },
+        "updateInteractiveToolCall": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      "guards": {},
+      "output": null,
+      "actions": {},
+      "context": {}
+    },
+    "rootNode": {
+      "id": "session",
+      "data": {
+        "key": "session",
+        "exit": [],
+        "tags": [],
+        "entry": [],
+        "assets": [],
+        "invoke": [],
+        "initial": "UpdatingSession"
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [
+        {
+          "id": "session.Agent",
+          "data": {
+            "key": "Agent",
+            "exit": [],
+            "tags": ["agent.alive"],
+            "entry": [],
+            "assets": [],
+            "invoke": [],
+            "initial": "UsingReadOnlyTools"
+          },
+          "size": {
+            "width": 0,
+            "height": 0
+          },
+          "nodes": [
+            {
+              "id": "session.Agent.AgentDone",
+              "data": {
+                "key": "AgentDone",
+                "exit": [],
+                "tags": [],
+                "type": "final",
+                "entry": [],
+                "assets": [],
+                "invoke": []
+              },
+              "size": {
+                "width": 0,
+                "height": 0
+              },
+              "nodes": [],
+              "position": {
+                "x": 1734,
+                "y": 1980
+              },
+              "uniqueId": "thqi7zyv14"
+            },
+            {
+              "id": "session.Agent.Stopping",
+              "data": {
+                "key": "Stopping",
+                "exit": [],
+                "tags": [],
+                "entry": [],
+                "assets": [],
+                "invoke": []
+              },
+              "size": {
+                "width": 0,
+                "height": 0
+              },
+              "nodes": [],
+              "position": {
+                "x": 1761,
+                "y": 2213
+              },
+              "uniqueId": "4itw4oqzpo"
+            },
+            {
+              "id": "session.Agent.UsingNonReadOnlyTools",
+              "data": {
+                "key": "UsingNonReadOnlyTools",
+                "exit": [],
+                "tags": ["agent.using-non-read-only-tools"],
+                "entry": [],
+                "assets": [],
+                "invoke": [],
+                "initial": "Running"
+              },
+              "size": {
+                "width": 0,
+                "height": 0
+              },
+              "nodes": [
+                {
+                  "id": "session.Agent.UsingNonReadOnlyTools.Paused",
+                  "data": {
+                    "key": "Paused",
+                    "exit": [],
+                    "tags": ["agent.paused"],
+                    "entry": [],
+                    "assets": [],
+                    "invoke": []
+                  },
+                  "size": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "nodes": [],
+                  "position": {
+                    "x": 2199,
+                    "y": 1783
+                  },
+                  "uniqueId": "79cnpi5l3ck"
+                },
+                {
+                  "id": "session.Agent.UsingNonReadOnlyTools.Running",
+                  "data": {
+                    "key": "Running",
+                    "exit": [],
+                    "tags": ["agent.running"],
+                    "entry": [],
+                    "assets": [],
+                    "invoke": []
+                  },
+                  "size": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "nodes": [],
+                  "position": {
+                    "x": 2413,
+                    "y": 1783
+                  },
+                  "uniqueId": "rnh8edbutc"
+                }
+              ],
+              "position": {
+                "x": 2151,
+                "y": 1645
+              },
+              "uniqueId": "xup7eqrqd"
+            },
+            {
+              "id": "session.Agent.UsingReadOnlyTools",
+              "data": {
+                "key": "UsingReadOnlyTools",
+                "exit": [],
+                "tags": [],
+                "entry": [],
+                "assets": [],
+                "invoke": [],
+                "initial": "Running"
+              },
+              "size": {
+                "width": 0,
+                "height": 0
+              },
+              "nodes": [
+                {
+                  "id": "session.Agent.UsingReadOnlyTools.Paused",
+                  "data": {
+                    "key": "Paused",
+                    "exit": [],
+                    "tags": ["agent.paused"],
+                    "entry": [],
+                    "assets": [],
+                    "invoke": []
+                  },
+                  "size": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "nodes": [],
+                  "position": {
+                    "x": 2943,
+                    "y": 1752
+                  },
+                  "uniqueId": "tvi2fkvz0dd"
+                },
+                {
+                  "id": "session.Agent.UsingReadOnlyTools.Running",
+                  "data": {
+                    "key": "Running",
+                    "exit": [],
+                    "tags": ["agent.running"],
+                    "entry": [],
+                    "assets": [],
+                    "invoke": []
+                  },
+                  "size": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "nodes": [],
+                  "position": {
+                    "x": 2727,
+                    "y": 1752
+                  },
+                  "uniqueId": "9nkntggffqa"
+                }
+              ],
+              "position": {
+                "x": 2679,
+                "y": 1614
+              },
+              "uniqueId": "o6cqjs0yb3"
+            }
+          ],
+          "position": {
+            "x": 1491,
+            "y": 1353
+          },
+          "uniqueId": "yt0cv5uhgp"
+        },
+        {
+          "id": "session.Done",
+          "data": {
+            "key": "Done",
+            "exit": [],
+            "tags": ["agent.done"],
+            "type": "final",
+            "entry": [
+              {
+                "kind": "named",
+                "action": {
+                  "type": "inline:session.Done#entry[0]",
+                  "params": {}
+                }
+              }
+            ],
+            "assets": [],
+            "invoke": []
+          },
+          "size": {
+            "width": 0,
+            "height": 0
+          },
+          "nodes": [],
+          "position": {
+            "x": 1391,
+            "y": 485
+          },
+          "uniqueId": "9ogskanximm"
+        },
+        {
+          "id": "session.ProcessingQueuedMessages",
+          "data": {
+            "key": "ProcessingQueuedMessages",
+            "exit": [],
+            "tags": ["agent.alive"],
+            "entry": [],
+            "assets": [],
+            "invoke": []
+          },
+          "size": {
+            "width": 0,
+            "height": 0
+          },
+          "nodes": [],
+          "position": {
+            "x": 1953,
+            "y": 523
+          },
+          "uniqueId": "8dz06w5p4ub"
+        },
+        {
+          "id": "session.SavingMessageAndSpawningAgent",
+          "data": {
+            "key": "SavingMessageAndSpawningAgent",
+            "exit": [],
+            "tags": ["agent.alive"],
+            "entry": [],
+            "assets": [],
+            "invoke": [
+              {
+                "id": "session.SavingMessageAndSpawningAgent:invocation[0]",
+                "src": "saveQueuedMessage",
+                "kind": "named",
+                "input": {},
+                "settings": {}
+              }
+            ]
+          },
+          "size": {
+            "width": 0,
+            "height": 0
+          },
+          "nodes": [],
+          "position": {
+            "x": 1592,
+            "y": 845
+          },
+          "uniqueId": "bbbdum327h8"
+        },
+        {
+          "id": "session.UpdatingSession",
+          "data": {
+            "key": "UpdatingSession",
+            "exit": [],
+            "tags": ["agent.alive"],
+            "entry": [],
+            "assets": [],
+            "invoke": [
+              {
+                "id": "session.UpdatingSession:invocation[0]",
+                "src": "updateSession",
+                "kind": "named",
+                "input": {},
+                "settings": {}
+              }
+            ]
+          },
+          "size": {
+            "width": 0,
+            "height": 0
+          },
+          "nodes": [],
+          "position": {
+            "x": 1597,
+            "y": 102
+          },
+          "uniqueId": "2ibcrcp5nq3"
+        }
+      ],
+      "position": {
+        "x": -36,
+        "y": 4
+      },
+      "uniqueId": "abd8n50n3k4"
+    },
+    "implementations": {
+      "actors": {
+        "updateSession": {
+          "id": "updateSession",
+          "kind": "named",
+          "name": "session.UpdatingSession:invocation[0]",
+          "type": "actor",
+          "input": {
+            "type": "object",
+            "properties": {}
+          },
+          "output": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "saveQueuedMessage": {
+          "id": "saveQueuedMessage",
+          "kind": "named",
+          "name": "session.SavingMessageAndSpawningAgent:invocation[0]",
+          "type": "actor",
+          "input": {
+            "type": "object",
+            "properties": {}
+          },
+          "output": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        }
+      },
+      "guards": {
+        "isAgentRefActive": {
+          "id": "isAgentRefActive",
+          "name": "isAgentRefActive",
+          "type": "guard",
+          "params": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session#updateInteractiveToolCall[-1]#guard": {
+          "id": "inline:session#updateInteractiveToolCall[-1]#guard",
+          "code": "export default ({ context }) => !!context.agentRef",
+          "name": "inline:session#updateInteractiveToolCall[-1]#guard",
+          "type": "guard",
+          "params": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.ProcessingQueuedMessages#always[-1]#guard": {
+          "id": "inline:session.ProcessingQueuedMessages#always[-1]#guard",
+          "code": "export default ({ context }) => {\n                        return context.queuedMessages.length > 0;\n                    }",
+          "name": "inline:session.ProcessingQueuedMessages#always[-1]#guard",
+          "type": "guard",
+          "params": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.Agent.UsingReadOnlyTools.Paused#agent.usingTool[-1]#guard": {
+          "id": "inline:session.Agent.UsingReadOnlyTools.Paused#agent.usingTool[-1]#guard",
+          "code": "export default ({ event }) => !event.value.readOnly",
+          "name": "inline:session.Agent.UsingReadOnlyTools.Paused#agent.usingTool[-1]#guard",
+          "type": "guard",
+          "params": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.Agent.UsingReadOnlyTools.Running#agent.usingTool[-1]#guard": {
+          "id": "inline:session.Agent.UsingReadOnlyTools.Running#agent.usingTool[-1]#guard",
+          "code": "export default ({ event }) => !event.value.readOnly",
+          "name": "inline:session.Agent.UsingReadOnlyTools.Running#agent.usingTool[-1]#guard",
+          "type": "guard",
+          "params": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        }
+      },
+      "actions": {
+        "stopAgent": {
+          "id": "stopAgent",
+          "name": "stopAgent",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "clearAgentRef": {
+          "id": "clearAgentRef",
+          "name": "clearAgentRef",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "assignEventError": {
+          "id": "assignEventError",
+          "name": "assignEventError",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "markUsedNonReadOnlyTools": {
+          "id": "markUsedNonReadOnlyTools",
+          "name": "markUsedNonReadOnlyTools",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.Done#entry[0]": {
+          "id": "inline:session.Done#entry[0]",
+          "code": "export default ({ context, self }) => {\n                context.parentRef.send({\n                    type: \"session.done\",\n                    value: {\n                        actorId: self.id,\n                        appConfig: context.appConfig,\n                        error: context.error,\n                        usedNonReadOnlyTools: context.usedNonReadOnlyTools,\n                    },\n                });\n            }",
+          "name": "inline:session.Done#entry[0]",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session#*[-1]#transition[0]": {
+          "id": "inline:session#*[-1]#transition[0]",
+          "code": "export default ({ context, event, self }) => {\n                logUnhandledEvent({\n                    captureException: context.appConfig.workspaceConfig.captureException,\n                    event,\n                    self,\n                });\n            }",
+          "name": "inline:session#*[-1]#transition[0]",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session#stop[-1]#transition[0]": {
+          "id": "inline:session#stop[-1]#transition[0]",
+          "code": "export default log(\"Agent not running\")",
+          "name": "Unnamed log",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session#addMessage[-1]#transition[0]": {
+          "id": "inline:session#addMessage[-1]#transition[0]",
+          "code": "export default assign({\"queuedMessages\":({ context, event }) => [\n                    ...context.queuedMessages,\n                    event.value,\n                ]})",
+          "name": "Unnamed assign",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.Agent#agent.done[-1]#transition[0]": {
+          "id": "inline:session.Agent#agent.done[-1]#transition[0]",
+          "code": "export default ({ context, event }) => {\n                        if (event.value.error) {\n                            context.appConfig.workspaceConfig.captureException(event.value.error, { scopes: [\"workspace\"] });\n                        }\n                    }",
+          "name": "inline:session.Agent#agent.done[-1]#transition[0]",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session#updateInteractiveToolCall[-1]#transition[0]": {
+          "id": "inline:session#updateInteractiveToolCall[-1]#transition[0]",
+          "code": "export default ({ context, event }) => {\n                    invariant(context.agentRef, \"Agent ref does not exist when finishing tool call\");\n                    context.agentRef.send({\n                        type: \"updateInteractiveToolCall\",\n                        value: event.value,\n                    });\n                }",
+          "name": "inline:session#updateInteractiveToolCall[-1]#transition[0]",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        },
+        "inline:session.SavingMessageAndSpawningAgent#done.invoke.session.SavingMessageAndSpawningAgent:invocation[0][-1]#transition[0]": {
+          "id": "inline:session.SavingMessageAndSpawningAgent#done.invoke.session.SavingMessageAndSpawningAgent:invocation[0][-1]#transition[0]",
+          "code": "export default assign({\"agentRef\":({ context, event, self, spawn }) => spawn(\"agentMachine\", {\n                                id: \"agent\",\n                                input: {\n                                    agent: context.agent,\n                                    appConfig: context.appConfig,\n                                    llmRequestTimeoutMs: context.llmRequestTimeoutMs,\n                                    maxStepCount: context.maxStepCount,\n                                    model: context.model,\n                                    parentMessageId: event.output.id,\n                                    parentRef: self,\n                                    sessionId: context.sessionId,\n                                },\n                            }),\"queuedMessages\":({ context }) => {\n                                const [_, ...rest] = context.queuedMessages;\n                                return rest;\n                            }})",
+          "name": "Unnamed assign",
+          "type": "action",
+          "schema": {
+            "type": "object",
+            "properties": {}
+          },
+          "imports": []
+        }
+      }
+    }
+  },
+  "createdAt": "2025-09-29T16:00:57.819Z",
+  "updatedAt": "2026-09-22T17:40:19.834Z",
+  "format": "digraph",
+  "locked": false
+}

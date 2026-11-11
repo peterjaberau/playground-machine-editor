@@ -1,0 +1,39 @@
+[
+  {
+    "id": "import-code",
+    "label": "Import code…",
+    "icon": "import",
+    "mutation": "machine-definition",
+    "input": {
+      "title": "Import code",
+      "description": "Replace this machine with pasted XState source or serialized machine data.",
+      "label": "Machine code",
+      "placeholder": "createMachine({ ... })",
+      "confirmLabel": "Import code"
+    },
+    "pendingLabel": "Importing code…",
+    "successLabel": "Machine code imported",
+    "errorLabel": "Machine code could not be imported",
+    "execute": "[Function]"
+  },
+  {
+    "id": "export-code",
+    "label": "Export code",
+    "icon": "export",
+    "dialog": "export",
+    "pendingLabel": "Preparing export…",
+    "successLabel": "Machine code exported",
+    "errorLabel": "Machine code could not be exported",
+    "execute": "[Function]"
+  },
+  {
+    "id": "export-image",
+    "label": "Export machine to PNG",
+    "icon": "image",
+    "dialog": "imageExport",
+    "pendingLabel": "Preparing image export…",
+    "successLabel": "Machine image exported",
+    "errorLabel": "Machine image could not be exported",
+    "execute": "[Function]"
+  }
+]
